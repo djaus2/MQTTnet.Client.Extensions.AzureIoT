@@ -18,7 +18,7 @@ Meadow Project Lab V3 test app for NetStandardLib _(Fails)_
 - MeadowMqttApplication* _(Work in progress)_  
 _Working on this_
 
-* Require a Secrets class file such as:
+*Require a Secrets class file such as:
 ```cs
   public static string deviceId = "";
   public static string hubName = "";
