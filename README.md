@@ -4,16 +4,16 @@ Cloned from [iotmodels/MQTTnet.Client.Extensions.AzureIoT](https://github.com/io
 
 ## Added
 - NetStandardLib
-  - NetStandardConsoleApp
+  - NetStandardTestConsoleApp
   - NetStandardTestMeadowApp
 - MeadowMqttApplication
 
 ## About
 - NetStandardLib*  
 Uses the ,, lib to open a connection to an Azure IoT Hub using DeviceConnectionString and send one telemetry packet.
-  - NetStandardConsoleApp  
+  - NetStandardTestConsoleApp  
 Desktop (.Net Core 3.1) test app for NetStandardLib _(Works)_
-  - NetStandarTestdMeadowApp  
+  - NetStandardTestMeadowApp  
 Meadow Project Lab V3 test app for NetStandardLib _(Fails)_
 - MeadowMqttApplication* _(Work in progress)_  
 _Working on this_
