@@ -17,6 +17,10 @@ Desktop (.Net Core 3.1) test app for NetStandardLib _(Works)_
 Meadow Project Lab V3 test app for NetStandardLib _(Fails)_
 - MeadowMqttApplication* _(Work in progress)_  
 _Working on this_
+  - This directly uses MQTTnet.
+  - Runs without crashing but does not connect.
+  - Needs Authetication etc.
+  - Can queue telemetry
 
 *Require a Secrets class file such as:
 ```cs
