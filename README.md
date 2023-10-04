@@ -15,6 +15,6 @@ Uses the ,, lib to open a connection to an Azure IoT Hub using DeviceConnectionS
 Desktop (.Net Core 3.1) test app for NetStandardLib _(Works)_
 - NetStandardMeadowApp  
 Meadow Project Lab V3 test app for NetStandardLib _(Fails)_
-- MeadowMqttApplication _(Work in progress)_
+- MeadowMqttApplication _(Work in progress)_  
 Working on this
 
