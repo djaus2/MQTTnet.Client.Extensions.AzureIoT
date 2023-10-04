@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>   
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\MQTTnet.Client.Extensions.AzureIoT\MQTTnet.Client.Extensions.AzureIoT.csproj" />
+  </ItemGroup>
+
+</Project>
