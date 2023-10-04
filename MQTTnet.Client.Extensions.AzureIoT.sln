@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeadowMqttApplication", "Me
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetStandardTestConsoleApp", "NetStandardConsoleApp\NetStandardTestConsoleApp.csproj", "{CA8CA411-31F9-4C16-A129-8AD6FE760C11}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetStandardMeadowApp", "NetStandardMeadowApp\NetStandardMeadowApp.csproj", "{B5CC7711-3D5C-4E37-AE22-D9FD3B1C38C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetStandardTestMeadowApp", "NetStandardMeadowApp\NetStandardTestMeadowApp.csproj", "{B5CC7711-3D5C-4E37-AE22-D9FD3B1C38C9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetStandardLib", "NetStandardLib\NetStandardLib.csproj", "{C303C7D5-3EA0-4539-9883-32D80F684753}"
 EndProject

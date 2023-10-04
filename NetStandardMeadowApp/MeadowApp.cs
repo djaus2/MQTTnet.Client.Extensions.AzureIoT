@@ -28,7 +28,7 @@ namespace MeadowApp
         public override Task Initialize()
         {
             //IotHubDeviceClient device;
-            //Resolver.Log.Info("Initialize...");
+            Resolver.Log.Info("Initialize...");
             //string connectionstring = Secrets.DEVICE_CONNECTION_STRING;
             //device = new IotHubDeviceClient(connectionstring);
             //device.OpenAsync().Wait();

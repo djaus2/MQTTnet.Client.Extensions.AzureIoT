@@ -42,8 +42,7 @@ namespace MeadowApplication3
 
             Resolver.Log.Info("Hello, Meadow Core-Compute!");
 
-
-            while (true) { Thread.Sleep(500); };
+;
 
             return base.Run();
         }
@@ -96,6 +95,7 @@ namespace MeadowApplication3
         private static IManagedMqttClient _mqttClient;
 
 
+        /* 
         private static void BuildTcpOptions(MqttClientTcpOptions message)
         {
             var optionstcp = new MqttClientTcpOptions()
@@ -110,12 +110,11 @@ namespace MeadowApplication3
                 TlsOptions = new MqttClientTlsOptions() { UseTls = true }//,
                                                                          //CleanSession = true
             };
-        }
+        }*/
 
         private  async void NetworkConnected(INetworkAdapter sender, NetworkConnectionEventArgs args)
         {
-            Resolver.Log.Info("WiFi Connected. Starting MQTT...");
-            //DisplayController.Instance.ShowConnected();
+            Resolver.Log.Info("WiFi Connected. Starting MQTT...");;
 
             // Connect to the IoT hub using the MQTT protocol
             //string OPTION_CONNECTION_TIMEOUTOPTION_CONNECTION_TIMEOUT = "300";
@@ -136,8 +135,8 @@ namespace MeadowApplication3
             {
 
                 
-                string UserName = $"{Secrets.IOT_CONFIG_IOTHUB_FQDN}/{Secrets.deviceId}/api-version=2018-06-30";
-                string Password = $"SharedAccessSignature sr={Secrets.IOT_CONFIG_IOTHUB_FQDN}%2Fdevices%2F{Secrets.deviceId}&sig=****&se=1592830262";
+                //string UserName = $"{Secrets.IOT_CONFIG_IOTHUB_FQDN}/{Secrets.deviceId}/api-version=2018-06-30";
+                //string Password = $"SharedAccessSignature sr={Secrets.IOT_CONFIG_IOTHUB_FQDN}%2Fdevices%2F{Secrets.deviceId}&sig=****&se=1592830262";
 
                 string method = "";
                 byte[] data = new byte[0];
@@ -175,20 +174,15 @@ namespace MeadowApplication3
                 
 
 
-                
+// Microsoft approach:                
 //s_deviceClient = DeviceClient.CreateFromConnectionString(Secrets.DEVICE_CONNECTION_STRING, TransportType.Mqtt);
-s_deviceClient = DeviceClient.CreateFromConnectionString(Secrets.DEVICE_CONNECTION_STRING, "DeviceId=ozz2dev", 
-    TransportType.Mqtt);
-                //DeviceClient.CreateFromConnectionString(Secrets.IoTHubConnectionString + $";DeviceId={ozz2dev.deviceId}", Microsoft.Azure.Devices.Client.TransportType.Amqp);*/
+//s_deviceClient = DeviceClient.CreateFromConnectionString(Secrets.DEVICE_CONNECTION_STRING, "DeviceId=ozz2dev",TransportType.Mqtt);
             } catch (Exception ex)
             {
 
             }
             await SendDeviceToCloudMessagesAsync();
 
-            //projectLab.EnvironmentalSensor.StartUpdating(TimeSpan.FromSeconds(15));
-
-            //onboardLed.SetColor(Color.Green);
         }
 
         public void StartWiFi()
