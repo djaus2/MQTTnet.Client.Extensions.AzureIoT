@@ -20,9 +20,9 @@ namespace NetStandardLib
             int counter = 137;
             var msg = new TelemetryMessage(new { counter, Environment.WorkingSet });
 
-
+            Console.WriteLine("Sending Telemetry");
             device.SendTelemetryAsync(msg).Wait();
-
+            Console.WriteLine("Sent OK");
 
         }
     }
